@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+}
+.had{
+    background: linear-gradient(135deg, #2E22AC, #D5489E);    width: 100%;
+    width: 100%;
+    height: 550px;
+
+}
+.container{
+    display: flex;
+    gap: 1.2rem;
+    color: #ffff;
+    padding-top: 25px;
+    padding-inline-start: 150px;
+    font-size: 20px ;
+    height: 30%;
+}
+
+.had-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70%;
+
+}
+.gh-hading{
+    color: #ffff;
+}
+.gh-hading h1{
+    font-size: 60px;
+    margin-bottom: 16px;
+}
+.gh-hading p{
+    margin-top: 16px;
+    font-size: 30px;
+}
+.had-container{
+    display: flex;
+    justify-content: space-between;
+    margin-inline-end: 150px;
+}
+.had-container i{
+    padding: 30px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+.subscribe-btn{
+    width: 100px;
+    height:40px;
+    border-radius: 30px ;
+    border: none;
+    color: #15171A;
+}
+
+.card-img{
+    width: 60%;
+
+}
+
+.body-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.Body{
+    margin-inline-start:10% ;
+    margin-inline-end:10% ;
+    margin-top: 30px;
+}
