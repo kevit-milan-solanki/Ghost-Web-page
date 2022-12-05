@@ -64,7 +64,7 @@ body{
 }
 
 
-.Body{
+.body-container{
     display: flex;
     flex-direction: column;
     margin-inline-start:10% ;
@@ -103,10 +103,8 @@ body{
     gap: 2rem;
 }
 
-article {
-    display: flex;
-    gap: 2rem;
-    width: 50%;
+.body-container2 {
+    width: 100px;
 }
 
 
