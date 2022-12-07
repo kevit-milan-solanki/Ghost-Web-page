@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d4b26028b1.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <div class="site-content">
@@ -15,15 +16,17 @@
 <div class="had">
     <div class="had-container">
         <header class="container">
-            <div>Home</div>
-            <div>About</div>
-            <div>Collection</div>
-            <div>Author</div>
-            <div>Portal</div>
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Collection</a></div>
+            <div><a href="#">Author</a></div>
+            <div><a href="#">Portal</a></div>
+
         </header>
         <div class="had-search">
             <i class="fas fa-search search"></i>
             <button class="subscribe-btn">Subscribe</button>
+            <i id="slider" class="fa-solid fa-bars" onauxclick="openNav()"></i>
         </div>
     </div>
     <div class="had-content">
@@ -37,13 +40,14 @@
 
 <!--             Body                -->
 <div class="mainBody">
+    <div class="mainContainer">
 
     <div class="bodyContainer">
         <div class="container1">
             <img src="https://demo.ghost.io/content/images/size/w1000/2022/05/welcome-to-ghost.png">
         </div>
         <div class="container2">
-            <span>Getting Started</span>
+            <span class="headSpan">Getting Started</span>
             <h2><b>
                 Start here for a quick overview of everything you need to know
             </b>
@@ -83,7 +87,7 @@
         </div>
 
 
-        <div class="container21">
+        <div class="container22">
             <img src="https://demo.ghost.io/content/images/size/w2000/2022/05/writing-posts-with-ghost.png">
             <span>Getting Started</span>
             <h2>
@@ -98,7 +102,7 @@
         </div>
 
     </div>
-
+    </div>
 <!--            grid container              -->
 
     <div class="grid-container">
@@ -328,24 +332,43 @@
 
     <div class="footer">
 
+<!--            <section class="copyright">-->
+<!--                <a href="#">Ghost</a>-->
+<!--                 © 2022-->
+<!--            </section>-->
+<!--            <nav class="footerNav">-->
+<!--                <ul>-->
+<!--                    <li class="footerList">-->
+<!--                        <a>-->
+<!--                            Data & privacy-->
+<!--                        </a>-->
+<!--                       </li>-->
+<!--                    <li class="footerList mid">Contact</li>-->
+<!--                    <li class="footerList">Contribute →</li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--            <section class="end">-->
+<!--                Powered by Ghost-->
+<!--            </section>-->
+
+
+
+        <div class="footerNavigaton">
             <section class="copyright">
                 <a href="#">Ghost</a>
-                 © 2022
+                © 2022
             </section>
-            <nav class="footerNav">
+            <nav class="fNav">
                 <ul>
-                    <li class="footerList">
-                        <a>
-                            Data & privacy
-                        </a>
-                       </li>
-                    <li class="footerList mid">Contact</li>
-                    <li class="footerList">Contribute →</li>
+                    <li>Data & privacy</li>
+                    <li>Contact</li>
+                    <li>Contribute →</li>
                 </ul>
             </nav>
-            <section class="end">
-                Powered by Ghost
-            </section>
+            <div>
+                power by Ghost
+            </div>
+        </div>
 
     </div>
 
