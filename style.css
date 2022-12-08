@@ -30,10 +30,19 @@ a {
     font-size: 20px;
     font-weight: 600;
     height: 30%;
+    list-style-type: none;
+}
+
+.container a {
+    color: white;
 }
 
 .container a:hover {
     color: #f1f1f1;
+}
+
+.menu i{
+    display: none;
 }
 
 .had-container {
@@ -90,9 +99,11 @@ a {
     padding: 10px;
 }
 
-#slider {
-    display: none;
-}
+/*.menu i {*/
+/*    display: none;*/
+/*}*/
+
+
 
 .mainBody {
     /*margin-left: 0 max(4vmin,20px);*/
@@ -309,11 +320,11 @@ a {
 
 }
 
-/*.grid-item {*/
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
 
-/*    grid-area: repeat;*/
-/*   */
-/*}*/
 .grid-item img {
     width: 100%;
     margin-bottom: 30px;
@@ -321,6 +332,7 @@ a {
     align-items: center;
     object-fit: cover;
 }
+
 
 .grid-item h2 {
     font-size: 1.8rem;
@@ -332,6 +344,13 @@ a {
 .grid-item h2:hover {
     color: rgba(21, 23, 25, 0.94);
 }
+
+
+/*.access-txt{*/
+/*    color: black;*/
+/*    background-image: url("https://demo.ghost.io/content/images/size/w2000/2022/05/organizing-your-content.png");*/
+/*    padding:50px;*/
+/*}*/
 
 .grid-item p {
     font: inherit;
@@ -357,15 +376,6 @@ a {
 /*}*/
 .featured svg {
     padding-top: 2px;
-}
-
-
-.accesImg {
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
@@ -466,6 +476,7 @@ ul a:hover {
 @media only screen and (max-width: 1030px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
+        /*grid-template-rows: repeat(12, 1fr);*/
     }
 
     .bodyContainer {
@@ -489,15 +500,19 @@ ul a:hover {
     .grid-item {
         grid-column-start: 1;
         grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
     }
 
+    .grid-item img {
+        height: 50vw;
+    }
 
 }
 
 @media only screen and (min-width: 1030px) {
     .grid-item img {
         height: 200px;
-
     }
 }
 
@@ -512,6 +527,7 @@ ul a:hover {
     }
 
     .had-content {
+
         padding-bottom: 50px;
     }
 
@@ -526,37 +542,72 @@ ul a:hover {
         font-size: 2rem;
     }
 
-
-}
-
-@media only screen and (max-width: 992px) {
-    .container {
-        display: none;
+    .bodyContainer2 {
+        position: fixed;
     }
 
+    @media only screen and (max-width: 992px) {
+        .navigation {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            top: 0;
+            left: -100%;
+            background: linear-gradient(135deg, #FF0095, #FF0095);
+            transition: all;
+        }
+
+        .container li {
+            display: block;
+            justify-content: center;
+            padding: 5px;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .container {
+            margin-top: 20%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .open {
+            left: 0;
+        }
+
+    }
     .subscribe-btn {
         display: none;
-
     }
-
-    #slider {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-
+    .menu i{
+        display: block;
     }
-
-    .had-search {
+    .had-search{
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        width: 100%;
 
     }
+    .had-search i{
+        position: sticky;
+
+    }
+   #slider{
+        left: 92vw;
+   }
+
+    .had-search.menu{
+        justify-items: right;
+    }
+
 
     .had-container {
-        margin-right: 1%;
-        margin-left: 1%;
+
     }
+
+
+
 }
 
 

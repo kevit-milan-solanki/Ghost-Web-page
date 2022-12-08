@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d4b26028b1.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+        <script src="index.js"></script>
 </head>
 <body>
 <div class="site-content">
@@ -15,18 +15,27 @@
     <!--                head                    -->
     <div class="had">
         <div class="had-container">
-            <header class="container">
-                <div><a href="#">Home</a></div>
-                <div><a href="#">About</a></div>
-                <div><a href="#">Collection</a></div>
-                <div><a href="#">Author</a></div>
-                <div><a href="#">Portal</a></div>
-            </header>
-            <div class="had-search">
-                <i class="fas fa-search search"></i>
+            <nav class="navigation" id="slid">
+                <ul class="container">
+                    <li><a href="#Body">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">collection</a></li>
+                    <li><a href="#">Author</a></li>
+                    <li><a href="#">Portal</a></li>
+                </ul>
+
+            </nav>
+
+            <div id="divsearch" class="had-search">
+                <i  class="fas fa-search search"></i>
                 <button class="subscribe-btn">Subscribe</button>
-                <i id="slider" class="fa-solid fa-bars" onauxclick="open()"></i>
+                <div class="menu"  onclick="myFunction()">
+                    <i id="slider" class="fa-solid fa-bars navOpen"></i>
+<!--                    <i id="closeBtn" class="fa-sharp fa-solid fa-xmark close"></i>-->
+                </div>
             </div>
+
+
         </div>
         <div class="had-content">
             <div class="gh-hading">
@@ -38,7 +47,7 @@
 
 
     <!--             Body                -->
-    <div class="mainBody">
+    <div class="mainBody" id="Body">
         <div class="mainContainer">
 
             <div class="bodyContainer">
@@ -131,30 +140,38 @@
 
             <div class="grid-item">
                 <a>
+
                     <img class="accesImg"
                          src="https://demo.ghost.io/content/images/size/w2000/2022/05/organizing-your-content.png">
-
-                    <!--            <div class="access-txt">-->
-                    <!--                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-                    <!--                        <path d="M16.25 6.875H3.75C3.40482 6.875 3.125 7.15482 3.125 7.5V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V7.5C16.875 7.15482 16.5952 6.875 16.25 6.875Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>-->
-                    <!--                        <path d="M7.1875 6.875V4.0625C7.1875 3.31658 7.48382 2.60121 8.01126 2.07376C8.53871 1.54632 9.25408 1.25 10 1.25C10.7459 1.25 11.4613 1.54632 11.9887 2.07376C12.5162 2.60121 12.8125 3.31658 12.8125 4.0625V6.875" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>-->
-                    <!--                        <path d="M10 13.125C10.6904 13.125 11.25 12.5654 11.25 11.875C11.25 11.1846 10.6904 10.625 10 10.625C9.30964 10.625 8.75 11.1846 8.75 11.875C8.75 12.5654 9.30964 13.125 10 13.125Z" fill="currentColor"></path>-->
-                    <!--                    </svg>-->
-                    <!--                   <span>Paid-member only</span>-->
-                    <!--            </div>-->
+                    <div class="access-txt">
+                        <!--                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+                        <!--                            <path d="M16.25 6.875H3.75C3.40482 6.875 3.125 7.15482 3.125 7.5V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V7.5C16.875 7.15482 16.5952 6.875 16.25 6.875Z"-->
+                        <!--                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"-->
+                        <!--                                  stroke-linejoin="round"></path>-->
+                        <!--                            <path d="M7.1875 6.875V4.0625C7.1875 3.31658 7.48382 2.60121 8.01126 2.07376C8.53871 1.54632 9.25408 1.25 10 1.25C10.7459 1.25 11.4613 1.54632 11.9887 2.07376C12.5162 2.60121 12.8125 3.31658 12.8125 4.0625V6.875"-->
+                        <!--                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"-->
+                        <!--                                  stroke-linejoin="round"></path>-->
+                        <!--                            <path d="M10 13.125C10.6904 13.125 11.25 12.5654 11.25 11.875C11.25 11.1846 10.6904 10.625 10 10.625C9.30964 10.625 8.75 11.1846 8.75 11.875C8.75 12.5654 9.30964 13.125 10 13.125Z"-->
+                        <!--                                  fill="currentColor"></path>-->
+                        <!--                        </svg>-->
+                        <!--                        <span>Paid-member only</span>-->
+                    </div>
                 </a>
-                <div class="featureClass">
-                    <span class="cardTag">Getting Started</span>
-                </div>
-                <h2>
-                    How to grow your business around an audience
-                </h2>
-                <p>
-                    A guide to collaborating with other staff users to publish, and some resources to help you with the
-                    next steps of growing your business
-                <div class="footerTime">
-                    <time>Mar 18, 2021</time>
-                    <span> 2 min read</span>
+                <div class="paidDsk">
+                    <div class="featureClass">
+                        <span class="cardTag">Getting Started</span>
+                    </div>
+                    <h2>
+                        How to grow your business around an audience
+                    </h2>
+                    <p>
+                        A guide to collaborating with other staff users to publish, and some resources to help you with
+                        the
+                        next steps of growing your business
+                    <div class="footerTime">
+                        <time>Mar 18, 2021</time>
+                        <span> 2 min read</span>
+                    </div>
                 </div>
             </div>
 
@@ -384,7 +401,7 @@
 
     <!--    Subscribe button-->
 
-    <div class="fix-btn">
+    <div class="fix-btn" id="fixBtn">
 
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"
              style="width: 24px; height: 24px; color: rgb(255, 255, 255);">
@@ -396,6 +413,8 @@
         <span>Subscribe</span>
     </div>
 </div>
+
+
 </body>
 </html>
 
