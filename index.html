@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d4b26028b1.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <div class="site-content">
@@ -16,22 +16,32 @@
     <div class="had">
         <div class="had-container">
             <nav class="navigation" id="slid">
-                <ul class="container">
-                    <li><a href="#Body">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">collection</a></li>
-                    <li><a href="#">Author</a></li>
-                    <li><a href="#">Portal</a></li>
-                </ul>
+                <div class="menuDiv">
+                    <div class="navDivIcon">
+                        <i class="fas fa-search fa-lg search"></i>
+                        <i id="closeBtn" class="fa-sharp fa-solid fa-lg fa-xmark close" onclick="myFunction2()"></i>
+                    </div>
+                    <div class="navMenu">
+                        <ul class="container">
+                            <li><a href="#Body">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">collection</a></li>
+                            <li><a href="#">Author</a></li>
+                            <li><a href="#">Portal</a></li>
+
+                        </ul>
+
+                    </div>
+                    <button id="Btns" class="Btn">SubScribe</button>
+                </div>
 
             </nav>
 
             <div id="divsearch" class="had-search">
-                <i  class="fas fa-search search"></i>
+                <i class="fas fa-search fa-lg search"></i>
                 <button class="subscribe-btn">Subscribe</button>
-                <div class="menu"  onclick="myFunction()">
-                    <i id="slider" class="fa-solid fa-bars navOpen"></i>
-<!--                    <i id="closeBtn" class="fa-sharp fa-solid fa-xmark close"></i>-->
+                <div class="menu">
+                    <i id="slider" class="fa-solid fa-lg fa-bars navOpen" onclick="myFunction()"></i>
                 </div>
             </div>
 

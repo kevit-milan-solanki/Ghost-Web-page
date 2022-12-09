@@ -41,7 +41,7 @@ a {
     color: #f1f1f1;
 }
 
-.menu i{
+.menu i {
     display: none;
 }
 
@@ -51,9 +51,15 @@ a {
     padding: 0 max(4vmin, 20px);
     margin: 0 auto;
     max-width: 1300px;
+    height: auto;
+    align-items: baseline;
     width: 100%;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 
+}
+
+.navDivIcon {
+    display: none;
 }
 
 .had-content {
@@ -81,8 +87,8 @@ a {
 
 .had-container i {
     padding-top: 30px;
-    width: 20px;
-    height: 20px;
+    /*width: 20px;*/
+    /*height: 20px;*/
     color: #fff;
 }
 
@@ -98,12 +104,6 @@ a {
     margin-left: 20px;
     padding: 10px;
 }
-
-/*.menu i {*/
-/*    display: none;*/
-/*}*/
-
-
 
 .mainBody {
     /*margin-left: 0 max(4vmin,20px);*/
@@ -232,7 +232,6 @@ a {
 }
 
 .container21 {
-    position: relative;
     overflow: hidden;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -270,7 +269,6 @@ a {
 
 
 .container22 {
-    position: relative;
     overflow: hidden;
     grid-column-start: 4;
     grid-column-end: 7;
@@ -472,6 +470,10 @@ ul a:hover {
 
 }
 
+.Btn {
+    display: none;
+}
+
 
 @media only screen and (max-width: 1030px) {
     .grid-container {
@@ -510,6 +512,7 @@ ul a:hover {
 
 }
 
+
 @media only screen and (min-width: 1030px) {
     .grid-item img {
         height: 200px;
@@ -527,7 +530,6 @@ ul a:hover {
     }
 
     .had-content {
-
         padding-bottom: 50px;
     }
 
@@ -542,10 +544,9 @@ ul a:hover {
         font-size: 2rem;
     }
 
-    .bodyContainer2 {
-        position: fixed;
-    }
-
+    /*.bodyContainer2 {*/
+    /*    position: ;*/
+    /*}*/
     @media only screen and (max-width: 992px) {
         .navigation {
             position: fixed;
@@ -566,47 +567,87 @@ ul a:hover {
             font-size: 1.2em;
         }
 
+
         .container {
-            margin-top: 20%;
-            text-align: center;
-            display: flex;
             flex-direction: column;
+            text-align: center;
+            align-self: center;
+            justify-content: space-between;
+            display: flex;
         }
+
         .open {
             left: 0;
         }
+
+        .BtnGone {
+            display: none;
+        }
+
+        .BtnShow {
+            display: block;
+            width: 100%;
+            border-radius: 35px;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 10px;
+            border-style: none;
+        }
+
+        .menuDiv {
+            display: grid;
+            gap: 48px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 95%;
+            padding: 0 max(4vmin, 20px);
+
+            /*margin-top: 20px;*/
+        }
+
+        /*.navDivIcon i {*/
+        /*    width: 20px;*/
+        /*    height: 20px;*/
+        /*}*/
+
+        /*.menuDiv button {*/
+        /*    justify-self: center;*/
+        /*}*/
+
+        /*.menuDiv {*/
+        /*    display: grid;*/
+        /*}*/
+
+        .navDivIcon {
+            display: flex;
+            font-weight: 200;
+            justify-content: space-between;
+        }
+
 
     }
     .subscribe-btn {
         display: none;
     }
-    .menu i{
+
+    .menu i {
         display: block;
     }
-    .had-search{
+
+    .had-search {
         width: 100%;
         display: flex;
         justify-content: space-between;
 
     }
-    .had-search i{
-        position: sticky;
 
-    }
-   #slider{
+    #slider {
         left: 92vw;
-   }
+    }
 
-    .had-search.menu{
+    .had-search.menu {
         justify-items: right;
     }
-
-
-    .had-container {
-
-    }
-
-
 
 }
 
